@@ -1,0 +1,9 @@
+When compiling FORTRAN code with external modules (from another file), sepcify the file that the module is in at compile time!
+
+For example:
+
+"gfortran mod/num_theory.f90 p046.f90"
+
+This will run the program in p046.f90 and link (I think it is called) it to the module num_theory that it is using in mod/num_theory.f90.
+
+The output file is the standard one unless specified.
